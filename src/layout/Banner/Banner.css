@@ -1,0 +1,61 @@
+.banner {
+  position: relative;
+  height: 70vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.banner-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+.banner-links a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.hamburger-menu-wrapper {
+  display: none;
+}
+
+.links-wrapper {
+  display: flex;
+}
+
+.links-wrapper-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .banner {
+    position: relative;
+    height: 50vh;
+  }
+
+  .hamburger-menu-wrapper {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .links-wrapper {
+    display: none;
+  }
+
+  .links-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+}

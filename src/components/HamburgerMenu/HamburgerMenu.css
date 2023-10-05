@@ -1,0 +1,11 @@
+.hamburger-menu {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.hamburger-menu div {
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 2px;
+}
