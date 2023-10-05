@@ -1,9 +1,15 @@
 import React from 'react';
 import './reset.css';
 import { GlobalRouter } from './router/GlobalRouter';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
-  return <GlobalRouter />;
+  return (
+    <>
+      <GlobalRouter />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
