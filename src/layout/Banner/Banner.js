@@ -10,12 +10,22 @@ export const Banner = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className='banner'>
       <img src={bannerImg} alt='Banner' className='logo' />
       <div className='banner-links'>
         <div className='links-wrapper'>
-          <a href=''>Kontakt</a>
+          <a href='#' onClick={scrollToBottom}>
+            Kontakt
+          </a>
           <a href='/tours'>Ture</a>
           <a href=''>Galerija</a>
         </div>
@@ -24,7 +34,9 @@ export const Banner = () => {
         </div>
         {isMobileMenuOpen && (
           <div className='links-wrapper-mobile'>
-            <a href=''>Kontakt</a>
+            <a href='#' onClick={scrollToBottom}>
+              Kontakt
+            </a>
             <a href='/tours'>Ture</a>
             <a href=''>Galerija</a>
           </div>
