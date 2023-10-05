@@ -8,7 +8,7 @@ export const Banner = () => {
       <img src={bannerImg} alt='Banner' className='logo' />
       <div className='banner-links'>
         <a href=''>Kontakt</a>
-        <a href=''>Ture</a>
+        <a href='/tours'>Ture</a>
         <a href=''>Galerija</a>
       </div>
     </header>

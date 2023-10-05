@@ -1,13 +1,9 @@
 import React from 'react';
 import './reset.css';
-import { Banner } from './components/Banner/Banner';
+import { GlobalRouter } from './router/GlobalRouter';
 
 function App() {
-  return (
-    <div>
-      <Banner />
-    </div>
-  );
+  return <GlobalRouter />;
 }
 
 export default App;
