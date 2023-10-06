@@ -1,10 +1,8 @@
 import React from 'react';
-import { Banner } from '../../layout/Banner/Banner';
 
 export const HomeScreen = () => {
   return (
     <div>
-      <Banner />
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

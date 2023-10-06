@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import './Banner.css';
 import bannerImg from '../../assets/images/banner.jpg';
 import { HamburgerMenu } from '../../components/HamburgerMenu/HamburgerMenu';
+import { useLocation } from 'react-router-dom';
 
 export const Banner = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const currentPage = location.pathname;
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,8 +22,10 @@ export const Banner = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const bannerHeight = currentPage === '/' ? '70vh' : '20vh';
+
   return (
-    <header className='banner'>
+    <header className='banner' style={{ height: bannerHeight }}>
       <img src={bannerImg} alt='Banner' className='logo' />
       <div className='banner-links'>
         <div className='links-wrapper'>
