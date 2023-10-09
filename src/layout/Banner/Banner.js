@@ -46,7 +46,7 @@ export const Banner = () => {
           <a href=''>{t('gallery')}</a>
         </div>
         <button onClick={() => handleLanguageChange('en')}>English</button>
-        <button onClick={() => handleLanguageChange('sr')}>Serbian</button>
+        <button onClick={() => handleLanguageChange('sr')}>Srpski</button>
         <div className='hamburger-menu-wrapper'>
           <HamburgerMenu onClick={toggleMobileMenu} />
         </div>
