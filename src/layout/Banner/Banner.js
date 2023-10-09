@@ -53,10 +53,10 @@ export const Banner = () => {
         {isMobileMenuOpen && (
           <div className='links-wrapper-mobile'>
             <a href='#' onClick={scrollToBottom}>
-              Kontakt
+              {t('contact')}
             </a>
-            <a href='/tours'>Ture</a>
-            <a href=''>Galerija</a>
+            <a href='/tours'>{t('tours')}</a>
+            <a href=''>{t('gallery')}</a>
           </div>
         )}
       </div>
