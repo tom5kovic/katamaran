@@ -5,13 +5,20 @@ import { LocationPin } from '../../components/icons/LocationPin';
 import { Clock } from '../../components/icons/Clock';
 import { DolarSign } from '../../components/icons/DolarSign';
 import { People } from '../../components/icons/People';
+import { useNavigate } from 'react-router-dom';
+import { TOUR_DETAILS } from '../../constants/Routes';
 
 export const ToursScreen = () => {
+  const navigate = useNavigate();
   return (
     <div className='content'>
       {toursData.map((item, index) => {
         return (
-          <div className='image-wrapper' key={item.id} onClick={() => null}>
+          <div
+            className='image-wrapper'
+            key={item.id}
+            onClick={() => navigate(TOUR_DETAILS)}
+          >
             <img src={item.image} className='image' alt={index} />
             <div className='info-container'>
               <div className='icon-text'>
