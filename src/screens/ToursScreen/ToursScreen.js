@@ -7,9 +7,9 @@ export const ToursScreen = () => {
     <div className='content'>
       {toursData.map((item, index) => {
         return (
-          <div className='image-wrapper' key={index}>
+          <div className='image-wrapper' key={item.id} onClick={() => null}>
             <img src={item.image} className='image' alt={index} />
-            <p>{item.text}</p>
+            <p>{item.name}</p>
           </div>
         );
       })}
