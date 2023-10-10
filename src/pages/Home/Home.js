@@ -1,8 +1,8 @@
 import React from 'react';
-import './HomeScreen.css';
+import './Home.css';
 import { useTranslation } from 'react-i18next';
 
-export const HomeScreen = () => {
+export const Home = () => {
   const { t } = useTranslation();
   return (
     <div className='centered-wrapper'>

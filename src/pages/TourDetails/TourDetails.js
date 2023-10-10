@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TourDetailsScreen = () => {
+export const TourDetails = () => {
   return (
     <div>
       <p>Molim</p>

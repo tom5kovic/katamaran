@@ -1,5 +1,5 @@
 import React from 'react';
-import './ToursScreen.css';
+import './Tours.css';
 import { toursData } from '../../data/ToursData';
 import { LocationPin } from '../../components/icons/LocationPin';
 import { Clock } from '../../components/icons/Clock';
@@ -8,7 +8,7 @@ import { People } from '../../components/icons/People';
 import { useNavigate } from 'react-router-dom';
 import { TOUR_DETAILS } from '../../constants/Routes';
 
-export const ToursScreen = () => {
+export const Tours = () => {
   const navigate = useNavigate();
   return (
     <div className='content'>
