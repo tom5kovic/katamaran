@@ -1,19 +1,15 @@
 import React from 'react';
-import './Tours.css';
+import './ToursScreen.css';
 import { toursData } from '../../data/ToursData';
 import { LocationPin } from '../../assets/icons/LocationPin';
 import { Clock } from '../../assets/icons/Clock';
 import { DolarSign } from '../../assets/icons/DolarSign';
 import { People } from '../../assets/icons/People';
 import { useNavigate } from 'react-router-dom';
+import { TOUR_DETAILS } from '../../constants/Routes';
 
-export const Tours = () => {
+export const ToursScreen = () => {
   const navigate = useNavigate();
-
-  const handleTourClick = (tourId) => {
-    navigate(`/tour-details/${tourId}`);
-  };
-
   return (
     <div className='content'>
       {toursData.map((item, index) => {
@@ -21,7 +17,7 @@ export const Tours = () => {
           <div
             className='image-wrapper'
             key={item.id}
-            onClick={() => handleTourClick(item.id)}
+            onClick={() => navigate(TOUR_DETAILS)}
           >
             <img src={item.image} className='image' alt={index} />
             <div className='info-container'>

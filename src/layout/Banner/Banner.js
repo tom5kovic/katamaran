@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { changeLanguageAction } from '../../store/language/actions';
 import { useTranslation } from 'react-i18next';
-import { TOURS } from '../../constants/Routes';
 
 export const Banner = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +42,7 @@ export const Banner = () => {
           <a href='#' onClick={scrollToBottom}>
             {t('contact')}
           </a>
-          <a href={TOURS}>{t('tours')}</a>
+          <a href='/tours'>{t('tours')}</a>
           <a href=''>{t('gallery')}</a>
         </div>
         <button onClick={() => handleLanguageChange('en')}>English</button>
@@ -56,7 +55,7 @@ export const Banner = () => {
             <a href='#' onClick={scrollToBottom}>
               {t('contact')}
             </a>
-            <a href={TOURS}>{t('tours')}</a>
+            <a href='/tours'>{t('tours')}</a>
             <a href=''>{t('gallery')}</a>
           </div>
         )}

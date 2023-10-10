@@ -12,7 +12,7 @@ export const toursData = [
     numberOfPeopple: '12 osoba',
     description: 'Pored slike',
     descAboveGallery: 'Iznad galerije',
-    galerija: [prva, druga]
+    gallery: [prva, druga, druga, prva, druga, druga]
   },
   {
     id: 2,
@@ -24,6 +24,6 @@ export const toursData = [
     numberOfPeopple: '10 osoba',
     description: 'Pored slike 2',
     descAboveGallery: 'Iznad galerije 2',
-    galerija: [druga, prva]
+    gallery: [druga, prva]
   }
 ];
