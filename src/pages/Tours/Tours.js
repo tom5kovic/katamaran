@@ -1,6 +1,6 @@
 import React from 'react';
 import './Tours.css';
-import { toursData } from '../../data/ToursData';
+import { ToursData } from '../../data/ToursData';
 import { LocationPin } from '../../assets/icons/LocationPin';
 import { Clock } from '../../assets/icons/Clock';
 import { DolarSign } from '../../assets/icons/DolarSign';
@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const Tours = () => {
   const navigate = useNavigate();
+  const toursData = ToursData();
 
   const handleTourClick = (tourId) => {
     navigate(`/tour-details/${tourId}`);

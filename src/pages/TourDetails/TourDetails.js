@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './TourDetails.css';
-import { toursData } from '../../data/ToursData';
+import { ToursData } from '../../data/ToursData';
 import { GalleryModal } from '../../layout/GalleryModal/GalleryModal';
 
 export const TourDetails = () => {
   const { tourId } = useParams();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const toursData = ToursData();
 
   const selectedTour = toursData.find((tour) => tour.id === parseInt(tourId));
 
